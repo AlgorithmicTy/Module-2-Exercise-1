@@ -1,14 +1,20 @@
-// import static org.junit.jupiter.api.Assertions.assertEquals;
 
-// import org.junit.jupiter.api.Test;
+import java.util.Scanner;
 
 public class Main {
   public static void main(String[] args) {
-    System.out.println("Hello world!");
-  }
+    // Create new Scanner object
+    Scanner input = new Scanner(System.in);
 
-  // @Test
-  // void addition() {
-  //     assertEquals(2, 1 + 1);
-  // }
+    // Prompt user to input a double
+    System.out.print("Enter a degree in Celsius: ");
+    double celsius = input.nextDouble();
+
+    // Convert Celsius to Fahrenheit
+    double fahrenheit = 9.0 / 5 * celsius + 32;
+
+    // Display results
+    System.out.println(celsius + " Celsius is " + fahrenheit
+      + " Fahrenheit"); 
+  }
 }
